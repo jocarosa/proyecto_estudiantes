@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.github.clans.fab.FloatingActionMenu
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Nuevo estudiante"
+                android:src="@drawable/add"/>
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/changeFont"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Cambiar tamaño de fuente"
+                android:src="@drawable/font"/>
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
+
